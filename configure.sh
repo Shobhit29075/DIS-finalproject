@@ -11,6 +11,6 @@ cd DIS-finalproject
 sudo cp flaskapp /etc/nginx/sites-enabled/
 cd /etc/nginx/sites-enabled/
 sudo service nginx restart
-cd ~
+cd /
 cd DIS-finalproject
 yes '' | nohup gunicorn3 app:app &
