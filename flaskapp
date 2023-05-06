@@ -1,6 +1,6 @@
   server {
     listen 80;
-    server_name latency.shobhitsingh.com www.latency.shobhitsingh.com shobhitsingh.com www.shobhitsingh.com;
+    server_name lb.shobhitsingh.com. www.lb.shobhitsingh.com latency.shobhitsingh.com www.latency.shobhitsingh.com shobhitsingh.com www.shobhitsingh.com;
     
 
     location / {
