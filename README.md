@@ -34,7 +34,7 @@ The repo contains the following files/directories:
   This is the part that needs to be replicated for testing if needed. Please refer Demo video Part 1 for ease. Total time to run this code on server is about 1-2 minute.<br>
   Note: If you want to clone and replicate using git clone and then run the configure.sh file, make sure to copy the sh file outside or else it will mess up the flow by changing the paths.
   
-  Also, we use the following code as userdata when launching the EC2 instance behind out load balancer. This works on our load balancer only because the server is directed to out doman which points to the static application load balancer. The server IP can change.<br>
+  Also, we use the following code as userdata when launching the EC2 instance behind out load balancer. This works on our load balancer only because the server is directed to out doman which points to the static application load balancer. The server IP can change in stand alone server so the below code will not work for that.<br>
   
 #!/bin/bash <br>
 sudo apt-get update -y <br>
