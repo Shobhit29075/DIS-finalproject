@@ -36,7 +36,7 @@ Test performance:-
   
   Also, we use the following code as userdata when launching the EC2 instance. However, this only adds the domain name to flaskapp file which points to the load balancer redirecting to the instance regardless of the instance IP. For stand alone server, use the configure.sh file.<br>
   
-#!/bin/bash
+#!/bin/bash <br>
 sudo apt-get update -y <br>
 sudo apt-get install -y git python3 nginx python3-pip gunicorn3 <br>
 sudo pip3 install flask boto3 <br>
