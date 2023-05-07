@@ -13,10 +13,8 @@ The repo contains the following files/directories:
   - flaskapp : nginx configuration file to redirect traffic coming to the IP from given server to the local host where the app is running
   
 Test performance:-
-  
-  
-  
-  
+  - testLatency.py: Python script to check and graph results of latency of all servers.
+  - testRecoveryTime.py: Python script to test the recovery time of the server when the server fails completely
 
 ## To manually setup the application.
   - Step 1: Launch an EC2 instance. Make sure the security group allows all traffic from the internet to port 80 and 8080 from any IP.
@@ -33,6 +31,7 @@ Test performance:-
 ## Setup the application using bash file
   
   To make it easy to test and setup, we have attached a bash file, configure.sh that can be run to replicate the entire process described above. This code works on Stand alone server. and the application be accessed using the public IP of the server to access the application.<br>
+  This is the part that needs to be replicated for testing if needed. Please refer Demo video Part 1 for ease.
   
   Also, we use the following code as userdata when launching the EC2 instance behind out load balancer. This works on our load balancer only because the server is directed to out doman which points to the static application load balancer. The server IP can change.<br>
   
