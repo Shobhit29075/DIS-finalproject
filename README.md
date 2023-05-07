@@ -12,7 +12,7 @@ The repo contains the following files/directories:
   - configure.sh : Bash file that can be used to install all dependencies, clone and run all commands needed to setup the webserver and application.
   - flaskapp : nginx configuration file to redirect traffic coming to the IP from given server to the local host where the app is running
   
-Test performance:-
+- Test performance:-
   - testLatency.py: Python script to check and graph results of latency of all servers.
   - testRecoveryTime.py: Python script to test the recovery time of the server when the server fails completely
 
