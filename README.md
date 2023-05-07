@@ -32,9 +32,9 @@ Test performance:-
   
 ## Setup the application using bash file
   
-  To make it easy to test and setup, we have attached a bash file, configure.sh that can be run to replicate the entire process described above.<br>
+  To make it easy to test and setup, we have attached a bash file, configure.sh that can be run to replicate the entire process described above. This code works on Stand alone server. and the application be accessed using the public IP of the server to access the application.<br>
   
-  Also, we use the following code as userdata when launching the EC2 instance. However, this only adds the domain name to flaskapp file which points to the load balancer redirecting to the instance regardless of the instance IP. For stand alone server, use the configure.sh file.<br>
+  Also, we use the following code as userdata when launching the EC2 instance behind out load balancer. This works on our load balancer only because the server is directed to out doman which points to the static application load balancer. The server IP can change.<br>
   
 #!/bin/bash <br>
 sudo apt-get update -y <br>
