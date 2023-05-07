@@ -31,7 +31,7 @@ The repo contains the following files/directories:
 ## Setup the application using bash file
   
   To make it easy to test and setup, we have attached a bash file, configure.sh that can be run to replicate the entire process described above. This code works on Stand alone server. and the application be accessed using the public IP of the server to access the application.<br>
-  This is the part that needs to be replicated for testing if needed. Please refer Demo video Part 1 for ease.
+  This is the part that needs to be replicated for testing if needed. Please refer Demo video Part 1 for ease. Total time to run this code on server is about 1-2 minute.
   
   Also, we use the following code as userdata when launching the EC2 instance behind out load balancer. This works on our load balancer only because the server is directed to out doman which points to the static application load balancer. The server IP can change.<br>
   
