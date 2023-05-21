@@ -15,8 +15,8 @@ def login():
 
     client = boto3.client('dynamodb',
    
-    aws_access_key_id="AKIAU26FNIUZVIPM4GYN",	
-    aws_secret_access_key="pwDF2QZQi27EwRaKcngpZL/yAod1EZfNPRhzJft/",
+    aws_access_key_id=<YOUR_ACCESS_KEY>,	
+    aws_secret_access_key=<YOUR_SECRET_ACCESS_KEY>",
     region_name="us-east-1")
     response=client.get_item(
         TableName='Authentication',
